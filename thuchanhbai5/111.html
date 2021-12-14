@@ -8,21 +8,21 @@
 </head>
 <body>
     <table>
-        <caption>SỞ THÍCH CỦA BẠN</caption>
+        <caption style="background-color: orangered; color: white;">SỞ THÍCH CỦA BẠN</caption>
         <tr>
-            <td><label for="yourname">Họ và tên</label></td>
+            <td><label for="yourname" style="color: blue; float: right;">Họ và tên: </label></td>
             <td><input type="text" id="yourname" name="your name" size="25"></td>
         </tr>
         <tr>
-            <td><label for="email">Email</label></td>
+            <td><label for="email" style="color: blue;float: right;">Email: </label></td>
             <td><input type="email" id="email" name="email" size="20"></td>
         </tr>
         <tr>
-            <td><label for="sothich">Sở thích: </label></td>
+            <td><label for="sothich" style="color: blue;float: right;">Sở thích: </label></td>
             <td>
-                <table>
+                <table style="color: orangered;">
                     <tr>
-                        <td><input type="checkbox" id="sothich" name="st" value="tt">Thể thao</td>
+                        <td><input type="checkbox" id="sothich" name="st" value="tt" >Thể thao</td>
                         <td><input type="checkbox" id="sothich" name="st" value="am">Âm nhạc</td>
                         <td><input type="checkbox" id="sothich" name="st" value="ds">Đọc sách</td>
                     </tr>
@@ -39,13 +39,12 @@
         </tr>
         <tr>
             <td></td>
-            <td><button>Gửi thông tin</button>
-                <input type="reset" value="Nhập lại">
+            <td>
+                <button>Gửi thông tin</button> 
+                <button>Nhập lại</button>  
             </td>
         </tr>
     </table>
-
-
 
 </body>
 </html>
