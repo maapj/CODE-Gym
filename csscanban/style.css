@@ -1,0 +1,27 @@
+.a1{
+    color:  red;
+    
+}
+
+.a2{
+    color: blue;
+    
+}
+
+.a1{
+    font-size: 100px;
+   
+}
+
+.a3{
+    color: red;
+    font-size: 20px;
+    
+}
+
+body{
+    background: url("https://i.pinimg.com/originals/cb/c2/2c/cbc22ca5a3d7568a742262639a9f6b3f.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:right top;
+}

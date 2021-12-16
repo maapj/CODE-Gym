@@ -1,0 +1,14 @@
+body{
+    background-color: green;
+}
+
+h1{
+    border: white 10px solid;
+    border-top: white 50px solid;
+    border-bottom: white 50px solid;
+    width: 200px; height: 135px;
+    background: pink;
+    text-align: center;
+    color: green;
+    margin: 20px;
+}
