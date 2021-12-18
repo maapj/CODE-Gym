@@ -1,0 +1,19 @@
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+
+ul.e {
+    list-style-image:url("https://png.pngtree.com/element_our/md/20180515/md_5afb099d007c6.jpg") ;
+}
