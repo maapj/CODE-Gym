@@ -1,162 +1,137 @@
-body{
-    margin: 0px;
-    padding: 0px;
+*{
+    transition: 0.5s;
 }
-
-.header{
+.head {
     width: 100%;
-    height: 100px;
+    height: 80px;
 }
-
-.logo{
+.logo {
     width: 30%;
-    height: 100px;
-    background: blue;
+    height: 80px;
+    background: greenyellow;
     float: left;
 }
 
-.banner{
+.banner {
     width: 70%;
-    height: 100px;
+    height: 80px;
+    background: #af2fff;
+    float: left;
+}
+
+.nav {
+    margin-top: 10px;
+    clear:both;
+    width: 100%;
+    height: 40px;
     background: red;
-    float: left;
 }
 
-.nav{
-    margin-top: 5px;
+.content {
+    margin-top: 10px;
     width: 100%;
-    height: 50px;
-    background: pink;
-    clear: both;
+    height: 700px;
 }
 
-.content{
-    width: 100%;
-    height: 800px;
-    margin-top: 5px;
-}
-
-.left{
+.left {
     width: 15%;
-    height: 800px;
+    height: 700px;
     float: left;
 }
 
-.left-top{
+.left-top {
     width: 100%;
     height: 200px;
     background: gray;
 }
-
-.left-bot{
+.left-bot {
     margin-top: 10px;
     width: 100%;
     height: 300px;
-    background: yellow;
+    background: black;
 }
 
-.mid{
+.mid {
     width: 60%;
-    height: 800px;
     float: left;
 }
-
-.mid-top{
+.mid-top {
     width: 100%;
-    height: 180px;
+    height: 200px;
 }
-
-.mid-top-left{
+.mid-top-item {
+    width: 48%;
+    height: 200px;
     margin-left: 1%;
-    width: 48.5%;
-    height: 180px;
-    background: violet;
-    float: left;
-}
-
-.mid-top-right{
     margin-right: 1%;
-    width: 48.5%;
-    height: 180px;
-    background: yellowgreen;
-    float: right;
+    float: left;
+    background: tomato;
 }
-
-.mid-center{
-    margin-top: 10px;
+.mid-bot {
     width: 100%;
-    height: 250px;
-    clear: both;
+    height: 500px;
 }
-
-.mid1{
-    margin-left: 2%;
-    width: 30%;
-    height: 250px;
-    background: royalblue;
-    float: left
+.mid-bot-item {
+    width: 31%;
+    height: 200px;
+    margin: 1.165%;
+    float: left;
+    background: tomato;
 }
-
-.mid2{
-    margin-left: 3%;
-    width: 30%;
-    height: 250px;
-    background: rgba(115, 125, 156, 0.678);
-    float: left
-}
-
-.mid3{
-    margin-right: 2%;
-    width: 30%;
-    height: 250px;
-    background: rgb(204, 27, 195);
-    float: right
-}
-
-.mid-bot{
-    margin-top: 10px;
-    width: 100%;
-    height: 250px;
-    clear: both;
-}
-
-.mid4{
-    margin-left: 2%;
-    width: 30%;
-    height: 250px;
-    background: rgb(163, 165, 43);
-    float: left
-}
-
-.mid5{
-    margin-left: 3%;
-    width: 30%;
-    height: 250px;
-    background: rgba(91, 125, 226, 0.678);
-    float: left
-}
-
-.mid6{
-    margin-right: 2%;
-    width: 30%;
-    height: 250px;
-    background: rgb(228, 118, 222);
-    float: right
-}
-
-
-.right{
+.right {
     width: 25%;
-    height: 800px;
-    background: green;
+    height: 700px;
+    background: blue;
     float: left;
 }
 
-.footer{
-    clear: both;
-    margin-top: 10px;
-    width: 100%;
-    height: 100px;
-    background: saddlebrown;
+@media only screen and (max-width: 1200px)
+{
+    .right
+    {
+        display: none;
+    }
+    .mid
+    {
+        width: 70%;
+    }
+    .left{
+        width: 30%;
+    }
 }
 
+@media only screen and (max-width: 900px)
+{
+    .mid{
+        width: 100%;
+    }
+    .left{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px)
+{
+    .mid-bot-item{
+        width: 47.5%;
+
+    }
+    .mid-top-item{
+        margin-bottom: 10px;
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .logo{
+        width: 15%;
+    }
+    .banner{
+        width: 85%;
+    }
+    .mid-bot-item{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
