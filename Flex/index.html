@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p{
+            font-size: 30px;
+        }
+        .flex-container {
+            display: flex;
+            align-items: stretch;
+            height: 200px;
+            background-color: #f1f1f1;
+        }
+
+        .flex-container>div {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Child Elements (Items)</h1>
+    <p>Các phần tử con trực tiếp của một flex container sẽ tự động trở thành các flex items.</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div> 
+        <div>4</div>
+      </div>
+    <p>Phần tử trên đại diện cho bốn flex items màu xanh lam bên trong một flex container màu xám.</p>
+    <br>
+    <p>Các thuộc tính của flex items là:
+        order || 
+        flex-grow ||
+        flex-shrink || 
+        flex-basis || 
+        flex || 
+        align-self
+    </p>
+    <br>
+    <h2> Thuộc tính order </h2>
+    <p>Thuộc tính order chỉ định thứ tự của các flex items</p>
+    <p>Ví dụ : Thuộc tính order có thể thay đổi thứ tự của các flex items:</p>
+    <div class="flex-container">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div>
+        <div style="order: 1">4</div>
+    </div>
+    <br>
+    <h2>Thuộc tính flex-grow</h2>
+    <p>thuộc tính flex-grow chỉ định mức độ mà một flex item sẽ phát triển so với phần còn lại của các  flex items.</p>
+    <p>Ví dụ: Làm cho flex item thứ ba phát triển nhanh hơn tám lần so với các flex items khác:</p>
+    <div class="flex-container">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 8">3</div>
+    </div>
+    <br>
+    <h2>Thuộc tính flex-shrink</h2>
+    <p>Thuộc tính flex-shrink chỉ định mức độ mà một flex item sẽ co lại so với phần còn lại của các flex items .</p>
+    <p>Ví dụ:Không để flex item thứ ba bị co lại nhiều như các flex items khác:</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <br>
+    <h2>Thuộc tính flex-basis:</h2>
+    <p>Thuộc tính flex-basis chỉ định độ dài ban đầu của một flex item.</p>
+    <p>Ví dụ: Đặt độ dài ban đầu của flex item thứ ba thành 200 pixel:</p>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis:200px">3</div>
+        <div>4</div>
+      </div>
+      <br>
+      <h2>Thuộc tính flex</h2>
+      <p>Thuộc tính flex là một thuộc tính viết tắt cho các thuộc tính flex-grow, flex-shrink, và flex-basis</p>
+      <p>Làm cho flex item thứ ba không thể phát triển (0), không thể thu nhỏ (0) và có độ dài ban đầu là 200 pixel:</p>
+      <p>Ví dụ: Làm cho flex item thứ ba không thể phát triển (0), không thể thu nhỏ (0) và có độ dài ban đầu là 200 pixel:</p>
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px">3</div>
+        <div>4</div>
+      </div>
+      <br>
+      <h2>Thuộc tính align-self</h2>
+      <p>Thuộc tính align-self chỉ định căn chỉnh cho item đã chọn bên trong flex container.</p>
+      <p>Thuộc tính align-self ghi đè căn chỉnh mặc định được đặt bởi thuộc tính align-items của vùng chứa.</p>
+
+      <p>Ví dụ: Căn chỉnh flex item thứ ba ở giữa vùng chứa:</p>
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center">3</div>
+        <div>4</div>
+      </div>
+      <br>
+      <p>Ví dụ: Căn chỉnh flex item thứ hai ở trên cùng của vùng chứa và flex item thứ ba ở dưới cùng của vùng chứa:</p>
+      <div class="flex-container">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div style="align-self: flex-end">3</div>
+        <div>4</div>
+      </div>
+</body>
+
+</html>

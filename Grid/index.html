@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Chào Các Bạn Trẻ Nhá </title>
+    <style>
+        .grid{
+            border: 5px solid green;
+            grid-gap: 5px;
+            display: grid;
+            background-color: green;
+            grid-template-columns: 100px 150px 125px;
+            grid-template-rows: 50px 50px 50px;
+        }
+
+        .grid-item {
+            background-color: rgb(213, 243, 213);
+            font-size: 30px;
+            text-align: center;
+
+        }
+
+        .item-header{
+            grid-column: 1/4;
+        }
+        .item-menu{
+            grid-row: 2/4;
+        }
+        .item-footer{
+            grid-column: 2/4;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="grid-item item-header">Header</div>
+        <div class="grid-item item-menu">Menu</div>
+        <div class="grid-item item-main">Main</div>
+        <div class="grid-item item-right">Right</div>
+        <div class="grid-item item-footer">Footer</div>
+    </div>
+
+</body>
+
+</html>
